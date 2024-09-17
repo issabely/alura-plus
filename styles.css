@@ -1,9 +1,9 @@
 :root {
     --branco-principal: #FFFFFF;
-    --cinza-segundario: #C0C0C0;
+    --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
-    --fonte-principal: 'Inter', sans-serif;
+    --fonte-principal: 'Inter';
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 .principal {
     background-image: url("IMG/Background.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     align-items: center;
     text-align: center;
 }
@@ -43,19 +43,14 @@ body {
     margin-bottom: 1em;
 }
 
-.container_secundario {
+.botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block;
-    text-decoration: none;
+    border: 2px solid var(--branco-principal)
 }
 
 .container__aviso {
     font-size: 12px;
-    color: var(--cinza-segundario);
+    color: var(--cinza-secundario);
 }
 
 .container__titulo {
@@ -63,14 +58,77 @@ body {
     font-weight: 700;
 }
 
-.container__imagem{
+.container__imagem {
     margin: 1em 0 2em 0;
 }
 
-.container__caixa{
+.container__caixa {
     margin: 0 6em;
 }
 
-.container__titulo-s{
-    text-align: left;
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.flex-container{
+    display:flex;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+
+}
+
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+.rodape__logo{
+    text-align: center;
+}
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+}
+.lista__link{
+   
+}
+.rodape__texto{
+    text-align: center;
+    margin: 2em 0;
 }
